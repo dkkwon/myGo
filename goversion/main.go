@@ -7,10 +7,13 @@ import (
 )
 
 var (
-	flagVersion bool
-	version     string
-	buildTime   string
+	flagVersion        bool
+	version, buildTime string
 )
+
+type goVersion struct {
+	version, buildTime string
+}
 
 func main() {
 	flag.BoolVar(&flagVersion, "v", false, "if true, print version and exit")
@@ -24,4 +27,12 @@ func main() {
 
 	fmt.Println("Hellow World")
 	fmt.Println("First Update")
+
+	var verInfo goVersion
+	verInfo.version = version
+	verInfo.buildTime = buildTime
+
+	fmt.Println("version: ", verInfo.version)
+	fmt.Println("buildTime: ", verInfo.buildTime)
+
 }
