@@ -16,3 +16,14 @@ func ExamplePrint() {
 	// 바나나는 맛있다.
 	// 토마토는 맛있다.
 }
+
+func ExampleShufull() {
+	x := map[string]int{"a": 1, "b": 2, "c": 3}
+	for k, v := range x {
+		fmt.Printf("k=%s v=%d\n", k, v)
+	}
+	// Unordered output:
+	// k=b v=2
+	// k=c v=3
+	// k=a v=1
+}
