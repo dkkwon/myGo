@@ -1,0 +1,3 @@
+level=error caller=main.go:30 ts=2022-02-27T13:16:11.11257804Z err="bad data"
+level=info caller=main.go:31 ts=2022-02-27T13:16:11.112646086Z event="data saved"
+caller=main.go:34 ts=2022-02-27T13:16:11.112661098Z foo=bar
